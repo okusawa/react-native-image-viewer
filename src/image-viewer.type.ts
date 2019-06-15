@@ -11,6 +11,8 @@ interface IOnMove {
 }
 
 export class Props {
+  public maxScale?: number = 10;
+
   /**
    * 是否显示
    */
@@ -243,8 +245,6 @@ export class State {
    * 是否出现功能菜单
    */
   public isShowMenu?: boolean = false;
-
-  public maxScale?: number = 10;
 }
 
 export interface IImageInfo {
